@@ -4,6 +4,10 @@ all:
 test:
 	clojure -M:dev:test
 
+.PHONY: fig
+fig:
+	clojure -A:dev:fig -M -m figwheel.main --build dev --repl
+
 .PHONY: format
 format:
 	nix fmt
