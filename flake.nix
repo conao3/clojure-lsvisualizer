@@ -31,7 +31,7 @@
             projectSrc = ./.;
             name = "com.github.conao3/lsvisualizer";
             main-ns = "lsvisualizer.core";
-            jdkRunner = pkgs.jdk17_headless;
+            jdkRunner = pkgs.jdk25_headless;
           };
 
           native = cljpkgs.mkGraalBin {
